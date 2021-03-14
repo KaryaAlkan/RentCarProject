@@ -63,7 +63,7 @@ namespace WebAPI.Controllers
             return BadRequest(result);
         }
 
-        [HttpPatch("updatebrand")]
+        [HttpPut("updatebrand")]
         public IActionResult Update(Color color)
         {
             var result = _colorService.Update(color);
